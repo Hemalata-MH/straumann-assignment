@@ -1,38 +1,177 @@
 .App {
-  text-align: center;
+    display: flex;
+    flex: wrap;
+}
+.patient-container {
+    display : flex;
+    flex-wrap: wrap;
+    border : 1px solid gray;
+    /* width: 100%; */
+    height: max-content;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar-container {
+    margin-top: 5rem;
+    margin-left: -3rem;
+}
+.sidebar {
+    width: 3%;
+    height: 45rem;
+    background-color: #000439;
+    text-align: center;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.patient-list {
+    width: 55%
+}
+
+.search-and-user{
+    width : 4rem;
+    border-bottom: 2px solid black;
+    display: flex;
+    margin: 1rem;
+    height: 5rem;
+    
+}
+
+.patient-heading {
+    height: 5rem;
+}
+
+ul > li {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
   }
-  to {
-    transform: rotate(360deg);
+
+  .filter-by-age {
+    margin : 10px 0 10px 0;
   }
+
+  .search-bar-with-user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 97%;
+    margin-bottom: 20px;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+  }
+  
+  .search-bar-with-user .search-input {
+    flex: 1;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 1rem
+  }
+  
+  .search-bar-with-user .user-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 30px;
+    color: #333;
+    margin-top: -0.9rem;
+  }
+  
+  .search-bar-with-user .user-name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .user-section {
+    display: flex;
+    padding-left: 10px;
+  }
+
+  .arrow-icon {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    position: relative;
+    padding-right: 16px;
+  }
+  
+  .arrow-icon::before {
+    content: '▼';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding-top: 10px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top : 50;
+    margin-left: 1.2rem;
+  }
+
+  .divider {
+        height: 3rem;
+        border-bottom-style : groove;
+  }
+
+  .patient-list-nav-items-right {
+    display: flex;
+    margin-left: 70.3rem;
+  }
+  .patient-list {
+    margin-left: 3rem;
+    margin-top: 0.7rem;
+  }
+
+  .table { 
+    margin-left: 3rem;
+}
+  
+.stop-icon {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  background-color: #d9534f;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 0.9rem;
+  margin-left: 1rem;
+}
+
+.square-box {
+  width: 50%;
+  height: 50%;
+  background-color: #fff; /* White square box color */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fa-ellipses-icon {
+  margin-left: 1rem;
+  margin-top: 1rem;
 }
